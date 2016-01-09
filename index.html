@@ -90,7 +90,7 @@ content {
 }
 p.red {
   color:  #A00F0F;
-  font-size: 36px;
+  font-size: 40px;
 }
 </style>
 
@@ -202,32 +202,32 @@ p.red {
 
 </div>
 <div style='float:right;width:50%;', class="centered">
-  <style>
-p.right {
-  color:  #000000;
-  font-size: 12px;
-}
-</style>
+  <p><strong>Progress</strong></p>
 
-<p><strong>Progress</strong>
-.right - Pilot
-.right - 2014
-.right   - 4 Conservancies
-.right   - Test
-.right   - Each NRT County
-.right   - ~1200 Households<br>
-.right - 2015
-.right   - 6 Conservancies
-.right     - Modular
-.right     - ~2000 Households<br>
-.right - Automated Reporting
-.right  - 3 levels
-.right    - Conservancy &amp; Wards
-.right    - County
-.right    - NRT<br>
-.right - Seasonal (Wet Season)
-.right  - June
-.right  - November</p>
+<ul>
+<li>Pilot
+
+<ul>
+<li>2014</li>
+<li>4 Conservancies</li>
+<li>Test</li>
+<li>Each NRT County</li>
+<li>~1200 Households<br></li>
+<li>2015</li>
+<li>6 Conservancies
+
+<ul>
+<li>Modular</li>
+<li>~2000 Households<br></li>
+</ul></li>
+<li>Automated Reporting</li>
+<li>3 levels</li>
+<li>Conservancy &amp; Wards</li>
+<li>County</li>
+<li>NRT<br></li>
+<li>Seasonal (Wet Season)</li>
+</ul></li>
+</ul>
 
 </div>
 
@@ -360,7 +360,7 @@ table.mytable tr:nth-child(2n+1) {
   <article data-timings="">
     <p><strong>Livelihoods</strong></p>
 
-<p><iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c72d6096c6 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
+<p><iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c71eee4d89 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
 
 <style>iframe{width:100%, height:400px;}</style>
 
@@ -386,13 +386,11 @@ table.mytable tr:nth-child(2n+1) {
    <div class="carousel-inner">
      <div class="item active">
        <img src="assets/img/avg_livestock.jpg" alt="" style="margin: auto; max-height: 500px; min-height: 500px;">
-       <div class="carousel-caption"><p>Average Livestock Numbers: Namunyak</p>
-</div>
+       <div class="carousel-caption"></div>
      </div>
      <div class="item ">
        <img src="assets/img/no_livestock.jpg" alt="" style="margin: auto; max-height: 500px; min-height: 500px;">
-       <div class="carousel-caption"><p>Households with No Livestock: Namunyak</p>
-</div>
+       <div class="carousel-caption"></div>
      </div>
    </div>
    <!-- Controls -->
@@ -426,7 +424,7 @@ table.mytable tr:nth-child(2n+1) {
   <article data-timings="">
     <p><strong>Wildlife</strong></p>
 
-<p><iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c76006449 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
+<p><iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c728c7df86 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
 
 <style>iframe{width:100%, height:400px;}</style>
 
@@ -436,12 +434,260 @@ table.mytable tr:nth-child(2n+1) {
 
 <slide class="" id="slide-13" style="background:;">
   <hgroup>
-    <h2>Choroplethic Governance Map</h2>
+    <h2>Security</h2>
   </hgroup>
   <article data-timings="">
-    <p><iframe src=' assets/fig/ch2-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart_1 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
+    <div id = 'chart1' class = 'rChart nvd3'></div>
 
-<style>iframe{width:100%, height:600px;}</style>
+<script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart1()
+    });
+    function drawchart1(){  
+      var opts = {
+ "dom": "chart1",
+"width":    800,
+"height":    600,
+"x": "ccy",
+"y": "prop",
+"group": "sec",
+"type": "multiBarChart",
+"id": "chart1" 
+},
+        data = [
+ {
+ "sec": "Improved",
+"prop":           0.34,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Same",
+"prop":           0.54,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.12,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Improved",
+"prop":           0.09,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Same",
+"prop":           0.09,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.81,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.01,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Improved",
+"prop":           0.63,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Same",
+"prop":           0.28,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.09,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Improved",
+"prop":           0.76,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Same",
+"prop":           0.21,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Worsened",
+"prop":           0.02,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Improved",
+"prop":           0.52,
+"ccy": "Melako" 
+},
+{
+ "sec": "Same",
+"prop":           0.13,
+"ccy": "Melako" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.35,
+"ccy": "Melako" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Melako" 
+},
+{
+ "sec": "Improved",
+"prop":           0.39,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Same",
+"prop":           0.17,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.44,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Improved",
+"prop":           0.65,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Same",
+"prop":           0.21,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.11,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.03,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Improved",
+"prop":           0.93,
+"ccy": "Sera" 
+},
+{
+ "sec": "Same",
+"prop":           0.04,
+"ccy": "Sera" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.02,
+"ccy": "Sera" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Sera" 
+},
+{
+ "sec": "Improved",
+"prop":           0.83,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Same",
+"prop":           0.06,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Worsened",
+"prop":            0.1,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.01,
+"ccy": "Westgate" 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+          
+        chart.xAxis
+  .rotateLabels(   -90)
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+
+<style>iframe{width:100%, height:650px;}</style>
 
   </article>
   <!-- Presenter Notes -->
@@ -449,26 +695,12 @@ table.mytable tr:nth-child(2n+1) {
 
 <slide class="" id="slide-14" style="background:;">
   <hgroup>
-    <h2>Analysis and Results</h2>
-  </hgroup>
-  <article data-timings="">
-    <p><strong>Security</strong></p>
-
-<p><iframe src=' assets/fig/security1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c72be7b691 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
-
-<style>iframe{width:100%, height:400px;}</style>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-15" style="background:;">
-  <hgroup>
     <h2>Action Plans</h2>
   </hgroup>
   <article data-timings="">
-    <blockquote>
-<p>-Use Data
+    
+<div style='float:left;width:50%;' class='centered'>
+  <p>-Use Data
 -Community and Conservancy Management and Development Plans</p>
 
 <ul>
@@ -492,6 +724,28 @@ table.mytable tr:nth-child(2n+1) {
 <li>Poaching</li>
 <li>Cattle Rustling</li>
 </ul>
+
+</div>
+<div style='float:right;width:50%;', class="centered">
+  <p><img src="assets/img/ccdmp.pdf" alt="ccdmp">
+Link:<a href="https://www.dropbox.com/s/1im1vytyhjm0cuq/CopyOfccdmp.pdf?dl=0">https://www.dropbox.com/s/1im1vytyhjm0cuq/CopyOfccdmp.pdf?dl=0</a> </p>
+
+<div style='text-align: center;'>
+    <img height='500' src='ccdmp.pdf' />
+</div>
+
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-15" style="background:;">
+  <hgroup>
+    <h2>Choroplethic Governance Map</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><iframe src=' assets/fig/ch2-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart_1 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -596,19 +850,19 @@ table.mytable tr:nth-child(2n+1) {
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=13 title='Choroplethic Governance Map'>
+        data-slide=13 title='Security'>
          13
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=14 title='Analysis and Results'>
+        data-slide=14 title='Action Plans'>
          14
       </a>
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=15 title='Action Plans'>
+        data-slide=15 title='Choroplethic Governance Map'>
          15
       </a>
     </li>

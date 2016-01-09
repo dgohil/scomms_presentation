@@ -10,11 +10,9 @@ biglogo     : NRTlogo_highres.jpg
 widgets     : [mathjax, quiz, bootstrap] # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-ext_widgets : {rCharts: libraries/nvd3} #libraries/leaflet, libraries/morris, libraries/polycharts]}
+ext_widgets : {rCharts: libraries/nvd3} 
 
 --- #myslide
-
-
 
 <div>
 <iframe src="https://dgohil.shinyapps.io/map_app/", width=500, height=800></iframe>
@@ -37,7 +35,7 @@ content {
 }
 p.red {
   color:  #A00F0F;
-  font-size: 36px;
+  font-size: 40px;
 }
 </style>
 
@@ -97,32 +95,23 @@ Conservancy Organogram
 ![plot of chunk scomms_pilot](assets/fig/scomms_pilot-1.png) 
 
 *** =right 
-<style>
-p.right {
-  color:  #000000;
-  font-size: 12px;
-}
-</style>
-
 **Progress**
-.right - Pilot
-.right - 2014
-.right   - 4 Conservancies
-.right   - Test
-.right   - Each NRT County
-.right   - ~1200 Households    
-.right - 2015
-.right   - 6 Conservancies
-.right     - Modular
-.right     - ~2000 Households   
-.right - Automated Reporting
-.right  - 3 levels
-.right    - Conservancy & Wards
-.right    - County
-.right    - NRT   
-.right - Seasonal (Wet Season)
-.right  - June
-.right  - November
+- Pilot
+ - 2014
+   - 4 Conservancies
+   - Test
+   - Each NRT County
+   - ~1200 Households    
+ - 2015
+   - 6 Conservancies
+     - Modular
+     - ~2000 Households   
+ - Automated Reporting
+  - 3 levels
+    - Conservancy & Wards
+    - County
+    - NRT   
+ - Seasonal (Wet Season)
 
 --- &twocol
 
@@ -202,7 +191,7 @@ Survey
 
 
 
-<iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c72d6096c6 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c71eee4d89 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe{width:100%, height:400px;}</style>
 
@@ -212,10 +201,9 @@ Survey
 **Assets**
 
 *** {class: active, img: "assets/img/avg_livestock.jpg"}
-Average Livestock Numbers: Namunyak
 
 *** {img: "assets/img/no_livestock.jpg"}
-Households with No Livestock: Namunyak
+
 
 
 --- #myslide
@@ -231,39 +219,273 @@ Households with No Livestock: Namunyak
 **Wildlife**
 
 
-<iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c76006449 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
-<style>iframe{width:100%, height:400px;}</style>
-
---- 
-
-## Choroplethic Governance Map
-
-
-
-
-
-
-<iframe src=' assets/fig/ch2-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart_1 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
-
-<style>iframe{width:100%, height:600px;}</style>
-
---- 
-
-## Analysis and Results
-**Security**
-
-
-<iframe src=' assets/fig/security1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c72be7b691 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c728c7df86 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe{width:100%, height:400px;}</style>
 
 ---
 
-## Action Plans
+## Security
 
-> -Use Data
-> -Community and Conservancy Management and Development Plans
+
+<div id = 'chart1' class = 'rChart nvd3'></div>
+<script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart1()
+    });
+    function drawchart1(){  
+      var opts = {
+ "dom": "chart1",
+"width":    800,
+"height":    600,
+"x": "ccy",
+"y": "prop",
+"group": "sec",
+"type": "multiBarChart",
+"id": "chart1" 
+},
+        data = [
+ {
+ "sec": "Improved",
+"prop":           0.34,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Same",
+"prop":           0.54,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.12,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Improved",
+"prop":           0.09,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Same",
+"prop":           0.09,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.81,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.01,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Improved",
+"prop":           0.63,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Same",
+"prop":           0.28,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.09,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Improved",
+"prop":           0.76,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Same",
+"prop":           0.21,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Worsened",
+"prop":           0.02,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Improved",
+"prop":           0.52,
+"ccy": "Melako" 
+},
+{
+ "sec": "Same",
+"prop":           0.13,
+"ccy": "Melako" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.35,
+"ccy": "Melako" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Melako" 
+},
+{
+ "sec": "Improved",
+"prop":           0.39,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Same",
+"prop":           0.17,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.44,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Improved",
+"prop":           0.65,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Same",
+"prop":           0.21,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.11,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.03,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Improved",
+"prop":           0.93,
+"ccy": "Sera" 
+},
+{
+ "sec": "Same",
+"prop":           0.04,
+"ccy": "Sera" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.02,
+"ccy": "Sera" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Sera" 
+},
+{
+ "sec": "Improved",
+"prop":           0.83,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Same",
+"prop":           0.06,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Worsened",
+"prop":            0.1,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.01,
+"ccy": "Westgate" 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+          
+        chart.xAxis
+  .rotateLabels(   -90)
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+
+
+<style>iframe{width:100%, height:650px;}</style>
+
+--- &twocol
+
+## Action Plans
+*** =left
+-Use Data
+-Community and Conservancy Management and Development Plans
    - Natural Resources
     - Increasing
     - Forests
@@ -277,9 +499,23 @@ Households with No Livestock: Namunyak
   - Security
    - Poaching
    - Cattle Rustling
-    
+   
+*** =right
+![ccdmp](assets/img/ccdmp.pdf)
+Link:https://www.dropbox.com/s/1im1vytyhjm0cuq/CopyOfccdmp.pdf?dl=0 
+<div style='text-align: center;'>
+    <img height='500' src='ccdmp.pdf' />
+</div>
 
----{
+---
+
+## Choroplethic Governance Map
+
+
+<iframe src=' assets/fig/ch2-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart_1 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+
+--- {
 tpl: thankyou
 }
 
@@ -292,6 +528,8 @@ For more information you can contact:
 deepali.gohil@nrt-kenya.org
 
 --- .class #id
+
+
 
 
 
