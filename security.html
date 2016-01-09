@@ -1,0 +1,276 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='http://nvd3.org/assets/css/nv.d3.css'>
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='http://d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='http://timelyportfolio.github.io/rCharts_nvd3_tests/libraries/widgets/nvd3/js/nv.d3.min-new.js' type='text/javascript'></script>
+    <script src='http://nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 800px;
+      height: 600px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+    
+    <div id = 'chart8c7490abc3e' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart8c7490abc3e()
+    });
+    function drawchart8c7490abc3e(){  
+      var opts = {
+ "dom": "chart8c7490abc3e",
+"width":    800,
+"height":    600,
+"x": "ccy",
+"y": "prop",
+"group": "sec",
+"type": "multiBarChart",
+"id": "chart8c7490abc3e" 
+},
+        data = [
+ {
+ "sec": "Improved",
+"prop":           0.34,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Same",
+"prop":           0.54,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.12,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Ilngwesi" 
+},
+{
+ "sec": "Improved",
+"prop":           0.09,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Same",
+"prop":           0.09,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.81,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.01,
+"ccy": "Kalama" 
+},
+{
+ "sec": "Improved",
+"prop":           0.63,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Same",
+"prop":           0.28,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.09,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Lekurruki" 
+},
+{
+ "sec": "Improved",
+"prop":           0.76,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Same",
+"prop":           0.21,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Worsened",
+"prop":           0.02,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Meibae " 
+},
+{
+ "sec": "Improved",
+"prop":           0.52,
+"ccy": "Melako" 
+},
+{
+ "sec": "Same",
+"prop":           0.13,
+"ccy": "Melako" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.35,
+"ccy": "Melako" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Melako" 
+},
+{
+ "sec": "Improved",
+"prop":           0.39,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Same",
+"prop":           0.17,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.44,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Nakuprat Gotu" 
+},
+{
+ "sec": "Improved",
+"prop":           0.65,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Same",
+"prop":           0.21,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.11,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.03,
+"ccy": "Namunyak" 
+},
+{
+ "sec": "Improved",
+"prop":           0.93,
+"ccy": "Sera" 
+},
+{
+ "sec": "Same",
+"prop":           0.04,
+"ccy": "Sera" 
+},
+{
+ "sec": "Worsened",
+"prop":           0.02,
+"ccy": "Sera" 
+},
+{
+ "sec": "Don't Know",
+"prop":              0,
+"ccy": "Sera" 
+},
+{
+ "sec": "Improved",
+"prop":           0.83,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Same",
+"prop":           0.06,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Worsened",
+"prop":            0.1,
+"ccy": "Westgate" 
+},
+{
+ "sec": "Don't Know",
+"prop":           0.01,
+"ccy": "Westgate" 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .reduceXTicks(false)
+          
+        chart.xAxis
+  .rotateLabels(   -90)
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
