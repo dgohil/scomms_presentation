@@ -16,11 +16,11 @@ author("slides") ### to launch the presentation
 
 runDeck() ### we need to run this because we're using a shiny application
 
-###publish to rpubs
+###publish to rpubs - only runs 6 slides
 publish(title = 'social_comms', 'index.html', host = 'rpubs')
 
 ###publish to github
-publish(user = "dgohil", repo = "scomms_ppt")
+publish(user = "dgohil", repo = "scomms_presentation")
 
 #runApp("map_app")
 

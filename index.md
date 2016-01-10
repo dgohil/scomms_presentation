@@ -5,7 +5,7 @@ author      : Deepali Gohil
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : default     # 
+hitheme     : tomorrow     # 
 biglogo     : NRTlogo_highres.jpg
 widgets     : [mathjax, quiz, bootstrap] # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
@@ -85,7 +85,7 @@ Conservancy Organogram
 
 **Adaptive management is a systematic approach for improving resource management by learning from management outcomes.**
 
---- &twocol 
+--- &twocol #pilot
 
 ## Piloting Social COMMS
 
@@ -103,58 +103,24 @@ Conservancy Organogram
    - Each NRT County
    - ~1200 Households    
  - 2015
-   - 6 Conservancies
-     - Modular
-     - ~2000 Households   
+   - 6 Conservancies 
  - Automated Reporting
   - 3 levels
     - Conservancy & Wards
     - County
     - NRT   
  - Seasonal (Wet Season)
+ 
+ <style>#pilot li{font-size: 80%}</style>
 
---- &twocol
+--- &twocol #sample
 
 ***=left
 **Sera Sample**
-<table border=1>
-<tr> <th>  </th> <th> Area </th> <th> Sample.Size </th>  </tr>
-  <tr> <td align="right"> 1 </td> <td> Losessia </td> <td align="right"> 66.00 </td> </tr>
-  <tr> <td align="right"> 2 </td> <td> Laresoro </td> <td align="right"> 17.00 </td> </tr>
-  <tr> <td align="right"> 3 </td> <td> Lesurua </td> <td align="right"> 17.00 </td> </tr>
-  <tr> <td align="right"> 4 </td> <td> Lerata </td> <td align="right"> 50.00 </td> </tr>
-  <tr> <td align="right"> 5 </td> <td> Lololian </td> <td align="right"> 33.00 </td> </tr>
-  <tr> <td align="right"> 6 </td> <td> Ntilaah nursery </td> <td align="right"> 17.00 </td> </tr>
-  <tr> <td align="right"> 7 </td> <td> Sereolipi </td> <td align="right"> 299.00 </td> </tr>
-  <tr> <td align="right"> 8 </td> <td> Sereolipi </td> <td align="right"> 299.00 </td> </tr>
-  <tr> <td align="right"> 9 </td> <td> Kiwanja </td> <td align="right"> 33.00 </td> </tr>
-  <tr> <td align="right"> 10 </td> <td> Lbaa  Loitepes </td> <td align="right"> 17.00 </td> </tr>
-  <tr> <td align="right"> 11 </td> <td> Nairabalikon(Natanrei lpayianyi) </td> <td align="right"> 17.00 </td> </tr>
-  <tr> <td align="right"> 12 </td> <td> Nalachau </td> <td align="right"> 50.00 </td> </tr>
-  <tr> <td align="right"> 13 </td> <td> Ntabasi </td> <td align="right"> 33.00 </td> </tr>
-  <tr> <td align="right"> 14 </td> <td> Police Post </td> <td align="right"> 17.00 </td> </tr>
-  <tr> <td align="right"> 15 </td> <td> Tourist camp </td> <td align="right"> 17.00 </td> </tr>
-  <tr> <td align="right"> 16 </td> <td> Town </td> <td align="right"> 116.00 </td> </tr>
-  <tr> <td align="right"> 17 </td> <td> Grand Total </td> <td align="right"> 365.00 </td> </tr>
-   </table>
 
-<style>
-table.mytable {
-  border: none;
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 12px;
-  line-height: 13px;
-  font-family: 'Ubuntu';'Trebuchet MS';
-  font-weight: bolder;
-  color: #A00F0F;
-}
+![sample](assets/img/sample_example.png)
 
-table.mytable tr:nth-child(2n+1) {
-  background: #A00F0F; 
-  */background: #FFFFFF;*/
-}
-</style>
+
 
 *** =right
 **Sampling**
@@ -172,6 +138,8 @@ table.mytable tr:nth-child(2n+1) {
    - Community Awareness
    - Data Collection
    - Payments
+
+<style>#sample li{font-size: 80%}</style>
 
 --- &carousel 
 
@@ -191,22 +159,24 @@ Survey
 
 
 
-<iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c71eee4d89 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart3a455c75399 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe{width:100%, height:400px;}</style>
 
----&carousel
+--- &carousel
 
-## Analysis and Results
-**Assets**
+## Assets
 
 *** {class: active, img: "assets/img/avg_livestock.jpg"}
+Average Livestock Numbers: Namunyak
 
 *** {img: "assets/img/no_livestock.jpg"}
+Households with No Livestock: Namunyak
 
 
 
 --- #myslide
+
 ## Analysis and Results
 
 <div>
@@ -215,17 +185,16 @@ Survey
 
 ---
 
-## Analysis and Results
-**Wildlife**
+## Wildlife: : Conflict Types
 
 
-<iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart8c728c7df86 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart3a4572388fe ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe{width:100%, height:400px;}</style>
 
 ---
 
-## Security
+## Security: Conflict Types
 
 
 <div id = 'chart1' class = 'rChart nvd3'></div>
@@ -237,7 +206,7 @@ Survey
       var opts = {
  "dom": "chart1",
 "width":    800,
-"height":    600,
+"height":    400,
 "x": "ccy",
 "y": "prop",
 "group": "sec",
@@ -480,39 +449,60 @@ Survey
 
 <style>iframe{width:100%, height:650px;}</style>
 
---- &twocol
-
-## Action Plans
-*** =left
--Use Data
--Community and Conservancy Management and Development Plans
-   - Natural Resources
-    - Increasing
-    - Forests
-    - Rangelands
-    - Water
-  - Human Development
-   - Poverty
-   - Livelihoods
-   - Education
-   - Health
-  - Security
-   - Poaching
-   - Cattle Rustling
-   
-*** =right
-![ccdmp](assets/img/ccdmp.pdf)
-Link:https://www.dropbox.com/s/1im1vytyhjm0cuq/CopyOfccdmp.pdf?dl=0 
-<div style='text-align: center;'>
-    <img height='500' src='ccdmp.pdf' />
-</div>
-
 ---
 
 ## Choroplethic Governance Map
 
 
+
+
+
 <iframe src=' assets/fig/ch2-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart_1 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+---
+
+## Questions?
+
+**Who should use the data?**
+ - NRT
+ - Conservancy Management and Boards
+ - Government
+ - Conservation and Development Stakeholders
+
+**What should they do with it?**
+ - Action Plans
+ - Development Plans/Vision
+ - Monitoring Impact
+
+--- &twocol_48 #action #ccdmp
+
+## Action Plans
+
+*** =left
+
+Use Data
+
+Community and Conservancy Management and Development Plans
+
+- Natural Resources
+ - Increasing
+ - Forests
+ - Rangelands
+ - Water
+- Human Development
+ - Poverty
+ - Livelihoods
+ - Education
+ - Health
+- Security
+ - Poaching
+ - Cattle Rustling
+
+<style>#action li{font-size: 70%}</style>
+   
+*** =right
+![ccdmp](assets/img/ccdmp.pdf)
+<img width=100px height=200px src=''assets/img/ccdmp.pdf"></img>
 
 
 --- {
@@ -523,11 +513,13 @@ tpl: thankyou
 
 For more information you can contact:
 
+Deepali Gohil
+
 +254 702 788 055
 
 deepali.gohil@nrt-kenya.org
 
---- .class #id
+
 
 
 
