@@ -39,8 +39,6 @@ p.red {
 }
 </style>
 
-
-
 .red **To develop resilient community conservancies that transform lives, secure peace, and conserve natural resources.**
 
 --- 
@@ -491,9 +489,9 @@ d1$save("governance.html", cdn = TRUE, standalone=TRUE)
 #d1$show('inline')
 d1$show('iframe', cdn = TRUE)
 #<style>iframe{width:100%, height:400px;}</style>
-
+#d1$print('chart1')
 ```
-
+file:///Users/dgohil/Documents/NRT/scomms/Github/governance_ppt/slides/governance.html
 ---
 
 ## Questions?
@@ -509,7 +507,7 @@ d1$show('iframe', cdn = TRUE)
  - Development Plans/Vision
  - Monitoring Impact
 
---- &twocol_48 #action #ccdmp
+--- &twocol_48 #action 
 
 ## Action Plans
 

@@ -39,8 +39,6 @@ p.red {
 }
 </style>
 
-
-
 .red **To develop resilient community conservancies that transform lives, secure peace, and conserve natural resources.**
 
 --- 
@@ -159,7 +157,7 @@ Survey
 
 
 
-<iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart3a455c75399 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart3a44ca78e3 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe{width:100%, height:400px;}</style>
 
@@ -185,10 +183,10 @@ Households with No Livestock: Namunyak
 
 ---
 
-## Wildlife: : Conflict Types
+## Wildlife: Conflict Types
 
 
-<iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart3a4572388fe ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart3a42f93fec8 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe{width:100%, height:400px;}</style>
 
@@ -457,7 +455,11 @@ Households with No Livestock: Namunyak
 
 
 
-<iframe src=' assets/fig/ch2-1.html ' scrolling='no' frameBorder='0' seamless class='rChart datamaps ' id=iframe- chart_1 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+
+
+<div>
+<iframe src="governance.html", width=500, height=800></iframe>
+</div>
 
 ---
 
@@ -474,7 +476,7 @@ Households with No Livestock: Namunyak
  - Development Plans/Vision
  - Monitoring Impact
 
---- &twocol_48 #action #ccdmp
+--- &twocol_48 #action 
 
 ## Action Plans
 
