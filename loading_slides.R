@@ -4,6 +4,8 @@
 #install.packages('http://cran.r-project.org/src/contrib/Archive/stringr/stringr_0.6.2.tar.gz', type = 'source')
 #install.packages('stringr')
 #devtools::install_github('muschellij2/slidify') ###need to run this so you dont get an error
+#devtools::install_github(repo='rCharts',username='ramnathv',ref="dev")
+#devtools::install_github(repo='rMaps',username='ramnathv',ref="master")
 setwd("~/Documents/NRT/scomms/Github/scomms_presentation")
 library(slidify)
 library(slidifyLibraries)

@@ -10,7 +10,7 @@ biglogo     : NRTlogo_highres.jpg
 widgets     : [mathjax, quiz, bootstrap] # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
-ext_widgets : {rCharts: libraries/nvd3} 
+ext_widgets : {rCharts: [libraries/nvd3, libraries/leaflet]} 
 
 --- #myslide
 
@@ -47,7 +47,7 @@ p.red {
 
 **Lands that are collectively owned and managed by the resident indigenous communities are being set aside for wildlife conservation and sustainable livestock practices.**
 
--The Need
+The Need
 >  - Frequent Drought
 >  - Sparse Government Services
 >  - Degraded Rangelands and Poor Livestock Production
@@ -94,20 +94,21 @@ Conservancy Organogram
 
 *** =right 
 **Progress**
-- Pilot
- - 2014
-   - 4 Conservancies
-   - Test
-   - Each NRT County
-   - ~1200 Households    
- - 2015
-   - 6 Conservancies 
+
+Pilot
+- 2014
+ - 4 Conservancies
+ - Test
+ - Each NRT County
+ - ~1200 Households    
+- 2015
+ - 6 Conservancies 
  - Automated Reporting
-  - 3 levels
-    - Conservancy & Wards
-    - County
-    - NRT   
- - Seasonal (Wet Season)
+ - 3 levels
+  - Conservancy & Wards
+  - County
+  - NRT   
+- Seasonal (Wet Season)
  
  <style>#pilot li{font-size: 80%}</style>
 
@@ -149,7 +150,7 @@ Enumerator Training
 *** {img: "assets/img/survey.pdf"}
 Survey
 
---- 
+---
 
 ## Analysis and Results
 **Livelihoods**
@@ -157,7 +158,7 @@ Survey
 
 
 
-<iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart3a44ca78e3 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/livelihoods1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart43885135dd ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe{width:100%, height:400px;}</style>
 
@@ -186,7 +187,7 @@ Households with No Livestock: Namunyak
 ## Wildlife: Conflict Types
 
 
-<iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart3a42f93fec8 ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
+<iframe src=' assets/fig/wildlife1-1.html ' scrolling='no' frameBorder='0' seamless class='rChart nvd3 ' id=iframe- chart43856eac24a ></iframe> <style>iframe.rChart{ width: 100%; height: 400px;}</style>
 
 <style>iframe{width:100%, height:400px;}</style>
 
@@ -449,20 +450,6 @@ Households with No Livestock: Namunyak
 
 ---
 
-## Choroplethic Governance Map
-
-
-
-
-
-
-
-<div>
-<iframe src="governance.html", width=500, height=800></iframe>
-</div>
-
----
-
 ## Questions?
 
 **Who should use the data?**
@@ -500,7 +487,7 @@ Community and Conservancy Management and Development Plans
  - Poaching
  - Cattle Rustling
 
-<style>#action li{font-size: 70%}</style>
+<style>#action li{font-size: 75%}</style>
    
 *** =right
 ![ccdmp](assets/img/ccdmp.pdf)
